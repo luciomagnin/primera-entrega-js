@@ -4,25 +4,39 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Alquiler de Equipos de Deportes Acuáticos</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
-<body style="background: linear-gradient(90deg, #0061ff, #60efff); font-family: Arial, Helvetica, sans-serif;">
-    <h1>Alquiler de Equipos de Deportes Acuáticos</h1>
-    <form id="reserva-form">
-        <label for="nombreEquipo">Nombre del Equipo:</label>
-        <input type="text" id="nombreEquipo" name="nombreEquipo" required style="outline: 1px solid black;"><br><br>
+<body>
+    <div class="contenedor">
+        <div class="formulario">
+            <h1>Alquiler de Equipos de Deportes Acuáticos</h1>
+            <form id="reserva-form">
+                <label for="nombreEquipo">Nombre del Equipo:</label>
+                <input type="text" id="nombreEquipo" name="nombreEquipo" required>
 
-        <label for="precioEquipo">Precio del Equipo por Hora ($):</label>
-        <input type="number" id="precioEquipo" name="precioEquipo" required style="outline: 1px solid black;"><br><br>
-
-        <label for="horasAlquiler">Horas de Alquiler:</label>
-        <input type="number" id="horasAlquiler" name="horasAlquiler" required style="outline: 1px solid black;"><br><br>
-        
-        <label for="miembroPremium">¿Es miembro premium?</label>
-        <input type="checkbox" id="miembroPremium" name="miembroPremium"><br><br>
-        
-        <button type="button" onclick="calcularCostoTotal()">Calcular Costo Total</button>
-    </form>
-    <p id="resultado"></p>
+                <label for="horasAlquiler">Horas de Alquiler:</label>
+                <input type="number" id="horasAlquiler" name="horasAlquiler" required>
+                
+                <label for="miembroPremium">¿Es miembro premium?</label>
+                <input type="checkbox" id="miembroPremium" name="miembroPremium">
+                
+                <button type="button" onclick="calcularCostoTotal()">Calcular Costo Total</button>
+            </form>
+            <p id="resultado"></p>
+        </div>
+        <div class="admin">
+            <h2>Administrar Equipos</h2>
+            <label for="nuevoNombreEquipo">Nombre del Nuevo Equipo:</label>
+            <input type="text" id="nuevoNombreEquipo">
+            <label for="nuevoPrecioEquipo">Precio del Nuevo Equipo por Hora ($):</label>
+            <input type="number" id="nuevoPrecioEquipo">
+            <button type="button" onclick="agregarEquipo()">Agregar Equipo</button>
+            <label for="eliminarNombreEquipo">Nombre del Equipo a Eliminar:</label>
+            <input type="text" id="eliminarNombreEquipo">
+            <button type="button" onclick="eliminarEquipo()">Eliminar Equipo</button>
+            <div id="equiposLista"></div>
+        </div>
+    </div>
 
     <script src="miarchivo.js"></script>
 </body>

@@ -1,0 +1,75 @@
+body {
+    background: linear-gradient(90deg, #0061ff, #60efff);
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.contenedor {
+    display: flex;
+    justify-content: space-around;
+    width: 80%;
+}
+
+.formulario, .admin {
+    background: rgba(255, 255, 255, 0.8);
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    flex-basis: 45%;
+    margin: 0 10px;
+}
+
+h1, h2 {
+    color: #0061ff;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+label {
+    display: block;
+    margin: 10px 0 5px;
+}
+
+input {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    background-color: #0061ff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #004bbd;
+}
+
+#resultado, #equiposLista {
+    margin-top: 20px;
+    background: #ffffff;
+    padding: 10px;
+    border-radius: 4px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.mensaje-exito {
+    color: green;
+    font-weight: normal;
+}
+
+.mensaje-error {
+    color: red;
+    font-weight: bold;
+}
