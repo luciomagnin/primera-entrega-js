@@ -11,7 +11,8 @@ class Equipo {
 let equiposDisponibles = JSON.parse(localStorage.getItem('equiposDisponibles')) || [
     new Equipo('Tabla de Surf', 15, 150),
     new Equipo('Kayak', 20, 200),
-    new Equipo('Paddleboard', 25, 250)
+    new Equipo('Paddleboard', 25, 250),
+    new Equipo('Balón', 25, 1500) // Asegurarse de que tenga precioCompra
 ];
 
 // Inicializar carrito desde el localStorage o usar un array vacío
