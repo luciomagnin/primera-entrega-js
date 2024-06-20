@@ -3,10 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Alquiler de Equipos de Deportes Acuáticos</title>
     <link rel="stylesheet" href="styles.css">
+    <title>Alquiler de Equipos de Deportes Acuáticos</title>
 </head>
 <body>
+    <nav>
+        <a href="index.html">Alquiler</a>
+        <a href="compra.html">Compra</a>
+        <a href="carrito.html">Carrito</a>
+    </nav>
     <div class="contenedor">
         <div class="formulario">
             <h1>Alquiler de Equipos de Deportes Acuáticos</h1>
@@ -20,7 +25,7 @@
                 <label for="miembroPremium">¿Es miembro premium?</label>
                 <input type="checkbox" id="miembroPremium" name="miembroPremium">
                 
-                <button type="button" onclick="calcularCostoTotal()">Calcular Costo Total</button>
+                <button type="button" id="calcularCostoButton">Calcular Costo Total</button>
             </form>
             <p id="resultado"></p>
         </div>
@@ -30,10 +35,12 @@
             <input type="text" id="nuevoNombreEquipo">
             <label for="nuevoPrecioEquipo">Precio del Nuevo Equipo por Hora ($):</label>
             <input type="number" id="nuevoPrecioEquipo">
-            <button type="button" onclick="agregarEquipo()">Agregar Equipo</button>
+            <label for="nuevoPrecioCompra">Precio del Nuevo Equipo para Comprar ($):</label>
+            <input type="number" id="nuevoPrecioCompra">
+            <button type="button" id="agregarEquipoButton">Agregar Equipo</button>
             <label for="eliminarNombreEquipo">Nombre del Equipo a Eliminar:</label>
             <input type="text" id="eliminarNombreEquipo">
-            <button type="button" onclick="eliminarEquipo()">Eliminar Equipo</button>
+            <button type="button" id="eliminarEquipoButton">Eliminar Equipo</button>
             <div id="equiposLista"></div>
         </div>
     </div>

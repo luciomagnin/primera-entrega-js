@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Compra de Equipos</title>
+</head>
+<body>
+    <nav>
+        <a href="index.html">Alquiler</a>
+        <a href="compra.html">Compra</a>
+        <a href="carrito.html">Carrito</a>
+    </nav>
+    <main>
+        <div class="formulario">
+            <h1>Añadir al Carrito Equipos Acuáticos </h1>
+            <form id="compra-form">
+                <label for="nombreEquipo"> <i class="fa-solid fa-cart-shopping"></i> Nombre del Equipo:</label>
+                <select id="nombreEquipo" name="nombreEquipo" required>
+                    <!-- Las opciones se añadirán dinámicamente desde JavaScript -->
+                </select>
+                <button type="button" id="agregarAlCarritoButton">Añadir al Carrito</button>
+            </form>
+            <p id="resultado"></p>
+        </div>
+    </main>
+
+    <script src="miarchivo.js"></script>
+</body>
+</html>
